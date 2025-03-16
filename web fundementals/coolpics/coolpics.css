@@ -1,168 +1,227 @@
-/*No matter what i tried, I could not get the pictures to be 100 by 100 pixels. I'm used to useing flex box, so that's primariy what i did here.
-I'm not sure if there was something else I was supposed to do... Becasue of the size problem, I also couldn't get the pictures to be the right
-width apart. Changing the margins just made everyting display weird.
-I would aprecieate a little help figuring out what I did wrong. */
 
 
 .header-band {
-    background-color: brown;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
-    
-    
+    background-color: rgb(8, 134, 252);
+    justify-content: center;
+
     
 }
 
 .header-title {
     display: flex;
-    justify-content: center; /* Centers text inside */
-    align-items: center;
-    padding: 15px;
-    flex: 1; /* Allows them to evenly distribute inside the parent */
-    text-align: center;
-    font-size: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    color: white;
+    font-size: 60px;
 }
 
-
-.navigation ul {
-    list-style: none;
+.navigation{
     display: flex;
-    justify-content: center; /* Centers text inside */
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-    gap: 15%;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
 
+    text-align: center;
+}
+
+.flex-ul-test {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    list-style-type: none;
     
 }
 
-.menu-button {
-    display: none;
-    background-color: brown;
+.nav-list a{
     color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
+    text-decoration: none;
+
 }
 
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
-@media (max-width: 900px) {
-    .navigation ul {
-        display: none; 
-    }
-
-    .menu-button {
-        display: block; 
-        margin: 10px auto;
-    }
-}
-
-
-@media (max-width: 600px) {
-    .menu-button {
-        display: none; 
-    }
-
-    .navigation ul {
-        display: flex; 
-        flex-direction: column; 
-        text-align: center;
-        background-color: brown;
-        padding: 10px;
-    }
+    margin: 0px;
+    padding: 0px;
 }
 
 .gallery-title {
     display: flex;
-    justify-content: center; /* Centers text inside */
-    align-items: center;
-    padding: 15px;
-    flex: 1; /* Allows them to evenly distribute inside the parent */
-    text-align: center;
-    font-size: 25px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+
+    margin: 10px 0px;
+    font-size: 40px;
 }
 
 .gallery {
-    display: flex; /* Enables flexbox */
-    flex-wrap: wrap; /* Flex wrap makes it so that my pictures don't get squished a bunch. Flexbox trys to stick everything on one row. The "wrap" part of it maakes it so things ar automaticaly put into the next row.. */
-    justify-content: center; /* Centers the rows */
-    align-items: center;
-    gap: 10px; /* Adds spacing between images */
-    margin: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+
+
+    
 }
 
-/* Make sure each image is inside a figure for proper layout */
-.gallery figure {
-    flex: 1 1 calc(33.33% - 10px); /* Each figure takes 1/3 of the row */
-    max-width: calc(33.33% - 10px); /* Prevents figures from exceeding 1/3 width */
-    margin: 0;
-}
+.img-container {
+    display: flex;
+    width: calc(100% / 3 -20px);
 
-/* Ensure images fit properly inside their figure elements */
-.gallery img {
-    width: 100%; /* Make images take up full width of their figure */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure images don't stretch */
 }
-
-/* When the screen is half-sized (900px), show 2 images per row */
-@media (max-width: 900px) {
-    .gallery figure {
-        flex: 1 1 calc(50% - 10px); /* Each figure takes 1/2 of the row */
-        max-width: calc(50% - 10px);
-    }
-}
-
-/* When the screen is small (600px), stack images (1 per row) */
-@media (max-width: 600px) {
-    .gallery figure {
-        flex: 1 1 100%; /* Each figure takes the full row */
-        max-width: 100%;
-    }
-}
-
 
 .square-picture {
-    max-width: 100%;
     height: 100px;
     width: 100px;
-    object-fit: cover;
+
+    pointer-events: auto;
 }
+
+@media (max-width: 500px) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 300px;
+
+    
+        
+    }
+}
+
+
+@media (max-width: 2900px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 610px) {
+    .menu {
+        display: flex;
+        height: 30px;
+        width: 120px;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+        background-color: transparent;
+        border: transparent;
+        color: white;
+
+        margin: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        text-align: center; 
+    }
+    
+    .flex-ul-test {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .show-menu {
+        display: flex; 
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+    .flex-ul-test {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        
+        list-style-type: none;
+    
+        
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+
+.footer-style {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border: 3px solid brown;
+    background-color: rgb(8, 134, 252);
+    color: white;
+    padding: 0px 0px 0px 5%;
+}
+
+
 
 .viewer {
     display: none;
-    display: grid;
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.75);
-    max-width: 100%;
-    place-items: center;
-    grid-template-rows: auto 1fr;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    place-items: center; 
+    z-index: 10;
+    padding: 15px;
+    
 }
 
 .close-viewer {
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2;    
     position: absolute;
-    top: 10px;
+    top: 20px; 
     right: 20px;
-    background: white;
-    color: black;
+    background-color: transparent;
     border: none;
     font-size: 20px;
-    padding: 5px 10px;
+    color: white;
+    padding: 5px;
     cursor: pointer;
+    z-index: 10; 
 }
 
-.viewer img {
-    max-width: 90%;
-    max-height: 80vh;
-    object-fit: contain;
+.big-image {
+    grid-column: 1 / 3; 
+    grid-row: 1 / 3;    
+    max-width: 90%; 
+    max-height: 100%;
+    object-fit: contain; 
 }
 
-.copywrite {
-    display: flex;
-    justify-content: center;
+.hide-viewer {
+    display: none;
+}
+
+.show-viewer {
+    display: grid;
 }

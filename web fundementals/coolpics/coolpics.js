@@ -1,21 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const viewer = document.querySelector(".viewer");
-    const closeBtn = document.querySelector(".close-viewer");
+document.addEventListener("DOMContentLoaded", function() {
+    const menuButton = document.getElementById("menu-bar");
+    const navList = document.getElementById("nav-ul-list");
+    const viewerObject = document.getElementById("viewer-thing");
+    const exitButton = document.getElementById("exit");
+    const bigPicture = document.querySelector(".big-image");
     const images = document.querySelectorAll(".square-picture");
-    const viewerImage = viewer.querySelector("img");
 
-    images.forEach(img => {
-        img.addEventListener("click", () => {
-            viewer.style.display = "grid"; 
-
-            // Get the source of the clicked image and replace "-sm" with "-full" to get the full-size image
-            let fullImageSrc = img.src.replace("-sm", "-full");
-
-            viewerImage.src = fullImageSrc; 
-        });
+    
+    menuButton.addEventListener("click", function() {
+        navList.classList.toggle("show-menu");
     });
 
-    closeBtn.addEventListener("click", () => {
-        viewer.style.display = "none";
+
+
+    exitButton.addEventListener("click", function() {
+        viewerObject.classList.add("hide-viewer"); 
+        viewerObject.style.display = "none";
     });
+
+    images.forEach((image) => {
+      image.addEventListener("click", function () {
+        viewerObject.style.display = "grid"; 
+      });
+    });
+    
 });
