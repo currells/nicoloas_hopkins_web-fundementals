@@ -1,0 +1,277 @@
+
+.body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.long-header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0px 0px 20px 0px;
+
+
+}
+
+.logo {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.page-title {
+    font-family: "patrick Hand", sans-serif;
+    font-size: 40px;
+}
+
+
+.main-container {
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.search-container-border {
+    display: flex;
+    width: 100%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+
+}
+
+.search-container {
+    display: flex;
+    
+    width: 100%;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 15px 0px;
+
+
+    
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    height: 22px;
+    
+    
+}
+
+.search-icon {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    padding: 3px;
+
+    border: 1px solid black;
+}
+
+.middle-container {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.full-recipe {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 15px;
+    height: 325px;
+    width: 100%;
+    margin: 15px 10px;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.recipe-img {
+
+    height: 100%;
+    width: auto;
+    margin-right: 15px;
+
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    align-items: flex-start;
+    
+    
+}
+
+.tag-container {
+    display: flex;
+    width: 100%;
+
+    
+}
+
+.tag {
+    display: flex;
+    text-align: center;
+    border: 1px solid black;
+    padding: 1px 6px;
+    margin-top: 0px;
+}
+
+.recipe-name {
+    margin-bottom: 0px;
+    font-family: "patrick Hand", sans-serif;
+    font-size: 20px;
+    color: rgb(0, 162, 255);
+
+}
+
+
+.rating {
+    display: flex;
+    width: 30px;
+
+}
+.long-footer {
+    display: flex;
+    width: 100%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+.footer-container {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.copyright {
+    display: flex;
+
+    margin-right: 60%;
+    width: 40%;
+    color: rgb(0, 162, 255);
+    font-size: 11px;
+    align-items: center;
+
+
+}
+
+.social {
+    display: flex;
+    width: 120px;
+    margin-left: auto;
+}
+
+.social-icon {
+    display: flex;
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width: 600px) {
+
+    .long-header {
+        margin-bottom: 80px;
+    }
+    .page-title {
+        font-size: 60px;
+        
+    }
+
+    .full-recipe {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        height: 600px;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .recipe-img {
+
+        height: auto;
+        width: 100%;
+        margin: 0px;
+        
+    
+    }
+    
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+        
+    }
+
+    .tag {
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .recipe-name {
+        font-size: 40px;
+        margin: 0px
+    }
+
+    .rating {
+        font-size: 27px;
+    }
+
+    .recipe-description {
+        display: none;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .copyright {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        order: 2;
+        font-size: 20px;
+    }
+
+    .social {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        height: 60px;
+        width: 60px
+    }
+
+  
+}

@@ -1,0 +1,50 @@
+.main-section {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+.school-title {
+    color: #006EB6;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.left-info {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+.byu-image {
+    width: 150px;
+    height: auto;
+}
+
+.number-list {
+    padding: 10px 0px;
+}
+
+.sub-head {
+    font-style: italic;
+}
+
+.dark {
+    background-color: #333;
+
+}
+
+.dark h1 {
+    color: #ffffff;
+}
+
+
+.dark h2 {
+    color: #949598;
+}
+
+.dark .left-info {
+    color: #ffffff;
+}

@@ -1,0 +1,215 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    grid-template-rows: repeat(7, 100px);
+    
+}
+
+.front {
+
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 1/5;
+    background-color: rgb(190, 190, 190);
+    z-index: 10;
+    margin: 0px;
+    padding: 0px 5% 5% 5%;
+    border-radius: 3%;
+    box-shadow: 3px 3px 10px 0px black;
+}
+
+.back {
+
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 2/6;
+    border-radius: 3%;
+    background-color: rgb(190, 190, 190);
+    z-index: 1;
+}
+
+.front-flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.total-container {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    
+    align-items: center;
+    margin: 5% 0px 15% 0px;
+    padding: 0px;
+
+}
+
+.total {
+    display: flex;
+    width: 70%;
+    justify-content: start;
+    font-size: 25px;
+    
+}
+
+.favicon-container{
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+
+    padding: 0px;
+
+    
+}
+
+.favicon {
+    display: flex;
+    width: 50%;
+    height: 500%;
+
+}
+
+
+
+.card-number {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    font-size: 25px;
+    justify-content: left;
+    padding: 0px;
+    text-align: left;
+
+    
+}
+
+.input-number {
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+
+.bottom-label-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 30px 0px 0px 0px;
+
+}
+
+.card-holder {
+    display: flex;
+    width: 74%;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.expire {
+    display: flex;
+    width: 26%;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    
+}
+
+
+
+.bottom-input {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    
+
+}
+
+.input-holder {
+    display: flex;
+    width: 65%;
+    height: 40px;
+    margin-right: 10%;
+}
+
+.month {
+    display: flex;
+    width: 10%;
+    height: 40px;
+    margin-right: 5%;
+}
+
+.year {
+    display: flex;
+    width: 10%;
+    height: 40px;
+}
+
+.strip {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    margin-top: 40px;
+}
+
+.flex-low-container {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    margin-top: 20%;
+    justify-content: flex-end;
+
+}
+
+.cvv-box {
+    display: flex;
+    flex-direction: column;
+    widtH: 20%;
+    height: 75px;
+    margin-right: 3%;
+    padding: 0px;
+    margin-bottom: 0px;
+    
+
+}
+
+.cvv {
+    display: flex;
+    font-size: 25px;
+    margin: 0px
+}
+
+.input-cvv {
+    display: flex;
+    width: 90%;
+    height: 50px;
+    margin: 0px;
+}
+
+input::placeholder {
+    font-size: 25px; 
+  }
+
+.button-container {
+    display: grid;
+    grid-column: 5/6;
+    grid-row: 6/7;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10%;
+}
+
+.submit {
+    border-radius: 7%;
+}
+

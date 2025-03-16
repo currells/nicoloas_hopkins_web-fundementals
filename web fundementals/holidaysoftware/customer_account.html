@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="customer_account.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        <!-- Header -->
+        <header>
+            <img src="honesty_rectangle_logo.png" alt="Honesty Lighting" class="logo" onclick="location.href='home.html'">
+            <h1>Without honesty, we have no light.</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <button>Barbara Smith</button>
+            <button>Year: 2</button>
+            <button>Payment History</button>
+            <button>Service History</button>
+            <button>Stats</button>
+            <button class="pay-bill">Pay Bill</button>
+        </nav>
+
+        <div class="container">
+            <!-- Balance & Notes Section -->
+            <div class="balance-notes">
+                <div class="balance">
+                    <div class="quick-balance-view">
+                        <div class="quick-balance-hyper-view">
+                            <div class="balance-title">Balance</div>
+                            <div class="total-balance">$45</div>
+                        </div>
+                        <div class="tier">Tier: 3</div>
+                    </div>
+                </div>
+
+                <div class="service-date-container">
+                    <div class="date-title">Service due date</div>
+                    <div class="due-date">11/15/2025</div>
+                </div>
+
+                <div class="notes">
+                    <h3>Notes:</h3>
+                    <textarea readonly>RANDOM NOTESRANDOM NOTES RANDOM NOTESRANDOM NOTES...</textarea>
+                </div>
+
+                <div class="note-buttons">
+                    <button class="edit-btn">Edit Notes</button>
+                    <button class="edit-btn">Edit Due Date</button>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="services">
+                <div class="service-title">Services</div>
+                <div class="flex-service-header">
+                    <div class="service-header">Service Type</div>
+                    <div class="service-header">Amount Left</div>
+                    <div class="service-header">Status</div>
+                </div>
+                
+                <div class="quick-roof-stats">
+                    <div class="status-pill">Roof</div>
+                    <div class="status-pill">200ft</div>
+                    <div class="roof">Unfinished</div>
+                </div>
+                
+                <div class="quick-tree-stats">
+                    <div class="status-pill">Trees</div>
+                    <div class="status-pill">3</div>
+                    <div class="tree">In Progress</div>
+                </div>
+                
+                <div class="quick-wreath-stats">
+                    <div class="status-pill">Wreath</div>
+                    <div class="status-pill">0</div>
+                    <div class="wreath">Completed</div>
+                </div>
+                
+                <div class="quick-greenery-stats">
+                    <div class="status-pill">Garland</div>
+                    <div class="status-pill">0</div>
+                    <div class="garland">Completed</div>
+                </div>
+                
+                <div class="quick-order-section">
+                    <div class="quick-order">Order Services</div>
+                    <div class="quick-cancel">Cancel Services</div>
+                </div>    
+
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <p>1000 S 2200 W, Orem, Utah</p>
+                <p>801-000-0000</p>
+                <p>example@gmail.com</p>
+                <div class="contact-buttons">
+                    <button>Edit Tags</button>
+                    <button>View Tags</button>
+                    <button>Customer Status</button>
+                    <button>Map</button>
+                    <button>Edit Map</button>
+                </div>
+                <button class="delete-btn">Delete Customer</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
